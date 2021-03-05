@@ -8,7 +8,7 @@ routes.use(authMiddleware);
 routes.post("/authenticate", PersonController.authUser);
 
 // Pedido
-routes.get("/persons/:name?", PersonController.getAllPersons);
+routes.get("/persons", PersonController.getAllPersons);
 routes.get("/persons/:id", PersonController.getPersonById);
 routes.post("/persons", PersonController.insertPerson);
 // routes.put("/persons", PersonController.updatePerson);

@@ -23,7 +23,7 @@ const PersonController = {
 
 	getAllPersons: async (req, res) => {
 		try {
-			const name = req.params.name || "";
+			const name = req.query.name || "";
 			const objAllPerson = await PersonService.getAllPersons(name);
 
 			return res.status(200).json(objAllPerson);
@@ -77,7 +77,7 @@ const PersonController = {
 			if (!hasIdPerson) {
 				objPerson = await PersonService.insertPerson(objPersonToSave);
 			} else {
-				objPerson = await PersonService.updatePerson(objPersonToSave, id);
+				objPerson = await PersonService.updatePerson(objPersonToSave, idPerson);
 			}
 
 			if (objPerson.hasOwnProperty("msg_error")) {
