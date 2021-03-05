@@ -2,6 +2,12 @@
 
 Backend desenvolvido com Node.js utilizando express.js
 
+## Para logar no sistema
+
+-   Subir o [frontend](https://github.com/romulofssGit/crud-romulo-frontend) e rodar o script de criação do banco de dados(Está no readme)
+-   Usuário: admin@admin.com
+-   Senha: 123456
+
 ## Instalação
 
 Use gerenciador de pacotes/dependências [yarn](https://yarnpkg.com/) para carregar as dependências e pacotes do projeto.
