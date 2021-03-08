@@ -24,6 +24,5 @@
 	},
 	"devDependencies": {
 		"sequelize-cli": "^5.4.0"
-	},
-	"homepage": "https://gitlab.com/romulofssGit/regent-restaurant-frontend#README"
+	}
 }
