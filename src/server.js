@@ -6,6 +6,7 @@ const server = require("http").Server(app);
 const port = process.env.SERVER_PORT || 3001;
 
 app.use(express.json());
+
 app.use(cors());
 
 app.use("/", routes);
